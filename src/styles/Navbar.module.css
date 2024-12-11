@@ -1,0 +1,60 @@
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-right: 1px solid #eaeaea;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+    width: 4rem;
+  }
+  
+  .navButton {
+    position: relative;
+    border: none;
+    background: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 1rem 0.5rem;
+    transition: transform 0.2s;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navButton:hover {
+    transform: scale(1.1);
+    background: rgba(0,0,0,0.05);
+    border-radius: 8px;
+  }
+  
+  .tooltip {
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #333;
+    color: white;
+    padding: 0.5rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+    margin-left: 0.5rem;
+    z-index: 100;
+  }
+  
+  .navButton:hover .tooltip {
+    opacity: 1;
+  }
+  
+  .emoji {
+    font-size: 1.5rem;
+  }
